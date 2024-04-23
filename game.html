@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <title>Cricket game</title>
+  </head>
+  <body>
+    <div class="you">
+      <video class="video"  autoplay loop muted plays-inline>
+        <source src="1.mp4" type="video/mp4">
+      </video>
+      <h1 id="heading">CRICKET</h1>
+      <div class="one">
+        <!-- this is start of the Bat -->
+        <button
+          class="game"
+          id="bat"
+          onclick="userchoice='Bat';
+    alert(`you have chossed ${userchoice}`);
+
+    randomnumbers();
+    computermove();
+    scorecard();
+    outcome(userchoice,computerchoice,result);
+    "
+        >
+        <img src="aibat2.png" class="img" alt="image of bat">
+        </button>
+
+        <!-- this is end of the Bat -->
+        <!-- this is for the Ball -->
+
+        <button
+          class="game"
+          id="Ball"
+          onclick="userchoice='Ball';
+    alert(`you have chossed ${userchoice}`);
+
+    randomnumbers();
+    computermove();
+    scorecard();
+    outcome(userchoice,computerchoice, result);
+    "
+        >
+        <img src="aib.png" class="img" alt="image of ball">
+        </button>
+        
+        <!-- this end the Ball -->
+
+        <!-- this is for the stamp -->
+        <button
+          class="game"
+          id="stamp"
+          onclick="userchoice='Stamp';
+    alert(`you have chossed ${userchoice}`);
+    
+    randomnumbers();
+    computermove();
+    scorecard();
+    outcome(userchoice,computerchoice,result);
+    
+    "
+        >
+        <img src="stamp.png" class="img" alt="image of Stamp">
+        </button>
+        
+        <!-- This is end of the Stamp -->
+      </div>
+
+      <div class="show">
+        <h2 id="sbat"></h2>
+        <h2 id="sball"></h2>
+        <h2 id="sstamp"></h2>
+        <h2 id="res"></h2>
+      </div>
+      <div class="clr">
+        <button
+          class="two"
+          onclick="
+      localStorage.clear();
+      resetscore();
+      alert('Everythig is cleared Now');
+      "
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+/* this is for the cricket game */
+
+.img{
+    width: 100px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: #445184 solid 0.2px;
+    border-radius: 50px;
+    background-color: black;
+    transition: filter 300ms;
+    cursor:pointer;
+}
+/* this is for the hovering effect when we go to click on buttons */
+.one:has(.img:hover)
+.img:not(:hover){
+     filter:
+       grayscale(50%)  brightness(80%) drop-shadow(16px 16px 20px red) ;
+}
+/* this is to set background video */
+.you{
+    height: 100vh;
+    background-color: linear-gradient(red);
+}
+
+/* this is to also cover all the background */
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: -1;
+}
+  /*this is to do all button in a line   */
+.one{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+/* this is for the cricket heading */
+#heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* background-image: linear-gradient(rgb(28, 111, 136)50%, rgb(160, 22, 22)50%); */
+    color: #02345f;
+    filter: drop-shadow(10px 18px 10px rgb(3, 57, 122)) opacity(75%);
+}
+/* this is for the background of the buttons which is under the buttons */
+
+
+
+.game{
+    background-color: #081443;
+    border: #020a27 solid 0.1px;
+    border-radius: 50px;
+}
+
+
+/* this is for the reset button */
+.two{
+    width: 100%;
+    height: 50px;
+    border: 0.5px solid rebeccapurple;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #02345f;
+}
+
+/* this syntax is for the all the h1 line like userchoic ,computerchoice and result and currentscore */
+
+#sbat{
+    display: flex;
+    justify-content: center;
+}
+#sball{
+    display: flex;
+    justify-content: center;
+
+}
+#sstamp{
+    display: flex;
+    justify-content: center;
+}
+#res{
+    display: flex;
+    justify-content: center;
+}
+
+/* this is to make video responsive when we scroll side */
+
+@media (min-ascept-ratio: 16/9){
+    .video{
+        width: 100%vw;
+        height: auto;
+    }
+}
+
+/* this is to make video responsive when we scroll down */
+@media (max-ascept-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%vh;
+    }
+}
+
+/* this is for the results line  */
+.show{
+    color: coral;
+}
