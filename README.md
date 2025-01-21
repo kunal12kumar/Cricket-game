@@ -32,14 +32,14 @@ You can try out the live demo of the game [here](insert-your-live-demo-link).
 
 ## Folder Structure
 
-- `index.html`: The main HTML file where the game interface is displayed.
-- `style.css`: The styling for the game's layout and design.
-- `script.js`: The JavaScript file that handles the game logic, user interactions, and computer's random choices.
-- `assets/`: Folder containing images or icons used in the game.
+- `cricket-game.html`: The main HTML file where the game interface is displayed.
+- `cricket-game.css`: The styling for the game's layout and design.
+- `cricket-game.js`: The JavaScript file that handles the game logic, user interactions, and computer's random choices.
+
 
 ## How to Play
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/cricket-game.git
+   git clone https://github.com/kunal12kumar/cricket-game.git
